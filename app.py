@@ -24,3 +24,19 @@ if abs(x) > 1:
     st.warning("Entrenando...")
 else:
     st.success("Converge a 1")
+
+
+st.divider()
+st.markdown("""
+### Fundamento Teórico
+
+Para $0 < x < \\pi/2$: $\\sin(x) < x < \\tan(x)$
+
+Entonces: $\\cos(x) < \\frac{\\sin(x)}{x} < 1$
+
+Por el Teorema del Sándwich, cuando $x \\to 0$, $\\cos(x) \\to 1$, por lo tanto:
+
+$$ \\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 $$
+
+**Importancia:** Es la base para derivar $\\sin(x)$ y para la aproximación $\\sin(x) \\approx x$ con ángulos pequeños.
+""")
