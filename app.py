@@ -8,6 +8,23 @@ st.sidebar.title("Tesina")
 unidad = st.sidebar.radio("Elegi la unidad:", ["Unidad 0 - Introduccion", "Unidad 1 - Limite de una funcion"])
 
 if unidad == "Unidad 0 - Introduccion":
+        st.title("Unidad 0 - Introduccion al Limite")
+    st.write("**¿Que es un limite?** Es la idea mas importante del calculo. Nos pregunta: ¿a que valor se acerca una funcion cuando x se acerca a un numero, sin llegar a ser ese numero?")
+    st.info("Ejemplo de la vida real: Si te acercas cada vez mas a la puerta sin tocarla, el limite es la puerta. No importa si la tocas o no, importa a donde te acercas.")
+    st.write("En esta unidad vamos a adivinar el limite usando una tabla y un grafico, antes de aprender la definicion formal en la Unidad 1.")
+    st.header("El problema que inicia todo")
+    st.write("Queremos saber que pasa con esta funcion cuando x se acerca a 0:")
+    st.latex(r"f(x) = \frac{\sin x}{x}")
+    st.write("**Problema:** Si ponemos x = 0, nos queda 0/0, que no se puede calcular. Entonces, ¿que hacemos? Probamos con valores cada vez mas cerca de 0, sin ser 0.")
+    st.subheader("Tabla de valores - acercandonos a 0")
+    st.table(pd.DataFrame({
+        "x por izquierda": [-1.0, -0.5, -0.1, -0.01, -0.001],
+        "f(x)": [0.84147, 0.95885, 0.99833, 0.99998, 1.00000],
+        "x por derecha": [1.0, 0.5, 0.1, 0.01, 0.001],
+        "f(x) ": [0.84147, 0.95885, 0.99833, 0.99998, 1.00000]
+    }))
+    st.success("¿Que ves? Por izquierda y por derecha, f(x) se acerca cada vez mas a 1. Entonces intuimos que el limite es 1.")
+    st.write("Abajo podes mover el punto rojo con el slider y comprobarlo vos misma:")
     st.title("Visualizador del Limite")
     st.latex(r"\lim_{x \to 0} \frac{\sin x}{x} = 1")
     x = st.slider("Mover x hacia 0", -3.0, 3.0, 1.5)
