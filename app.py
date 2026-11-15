@@ -23,7 +23,7 @@ st.table(pd.DataFrame({
         "x por derecha": [1.0, 0.5, 0.1, 0.01, 0.001],
         "f(x) ": [0.84147, 0.95885, 0.99833, 0.99998, 1.00000]
 }))
-    st.success("¿Que ves? Por izquierda y por derecha, f(x) se acerca cada vez mas a 1. Entonces intuimos que el limite es 1.")
+st.success("¿Que ves? Por izquierda y por derecha, f(x) se acerca cada vez mas a 1. Entonces intuimos que el limite es 1.")
     st.write("Abajo podes mover el punto rojo con el slider y comprobarlo vos misma:")
     st.title("Visualizador del Limite")
     st.latex(r"\lim_{x \to 0} \frac{\sin x}{x} = 1")
