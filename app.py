@@ -10,7 +10,7 @@ unidad = st.sidebar.radio("Elegi la unidad:", ["Unidad 0 - Introduccion", "Unida
 if unidad == "Unidad 0 - Introduccion":
         st.title("Unidad 0 - Introduccion al Limite")
 st.write("**¿Que es un limite?** Es la idea mas importante del calculo. Nos pregunta: ¿a que valor se acerca una funcion cuando x se acerca a un numero, sin llegar a ser ese numero?")
-    st.info("Ejemplo de la vida real: Si te acercas cada vez mas a la puerta sin tocarla, el limite es la puerta. No importa si la tocas o no, importa a donde te acercas.")
+st.info("Ejemplo de la vida real: Si te acercas cada vez mas a la puerta sin tocarla, el limite es la puerta. No importa si la tocas o no, importa a donde te acercas.")
     st.write("En esta unidad vamos a adivinar el limite usando una tabla y un grafico, antes de aprender la definicion formal en la Unidad 1.")
     st.header("El problema que inicia todo")
     st.write("Queremos saber que pasa con esta funcion cuando x se acerca a 0:")
