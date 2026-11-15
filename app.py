@@ -55,7 +55,7 @@ elif unidad == "Unidad 1 - Limite de una funcion":
     fig.add_trace(go.Scatter(x=xs, y=[f1(i) for i in xs], mode="lines", name="y = x2 - x + 2"))
     fig.add_trace(go.Scatter(x=[x1], y=[f1(x1)], mode="markers", marker=dict(size=13, color="red"), name="Punto actual"))
     fig
-        st.header("(2) y (3) DEFINICION - Limites laterales")
+    st.header("(2) y (3) DEFINICION - Limites laterales")
     st.subheader("Limite por la izquierda")
     st.latex(r"\lim_{x \to a^{-}} f(x) = L")
     st.write("Se dice que el limite lateral izquierdo de f(x) cuando x tiende a a es igual a L si podemos acercar arbitrariamente los valores de f(x) a L por la izquierda, aproximando x a a, con x menor que a.")
